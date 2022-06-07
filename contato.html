@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+        <title>Antônio's Barbershop</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.jpg" class="logo-cabecalho" alt="Logo da Barbearia Alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="servicos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form form action="https://formsubmit.co/andersonmatte_18@hotmail.com" method="POST">
+
+
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" name="Nome e Sobrenome" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" class="input-padrao" required
+                placeholder="seuemail@dominio.com">
+
+
+
+            <label for="telefone">Celular ou WhatsApp</label>
+            <input pattern="^\d{2}\d{5}\d{4}$" type="tel" name="Telefone ou Whatsapp" id="telefone" class="input-padrao"
+                required placeholder="(XX) XXXXX-XXXX"
+                oninvalid="this.setCustomValidity('Digite o DDD com 2 números e os 9 números do celular')"
+                onkeyup="setCustomValidity('')">
+
+
+
+            <label for="mensagem">Mensagem</label>
+            <textarea type="mensagem" name="Mensagem" cols="70" rows="10" id="mensagem" class="input-padrao"
+                required></textarea>
+
+
+            <fieldset class="prefere-contato">
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="prefere-contato" value="email"
+                        id="radio-email">Email</label>
+
+
+                <label for="radio-telefone"><input type="radio" name="prefere-contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="prefere-contato" value="whatsapp"
+                        id="radio-whatsapp" checked>Whatsapp</label>
+            </fieldset>
+
+
+            <!-- -->
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+
+            <label class="checkbox"><input type="checkbox" name="Receber Novidades" checked> Gostaria de receber nossas
+                novidades por
+                email?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Das 8h às 18h</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Das 8h às 18h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Das 8h às 18h</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Das 8h às 18h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Das 8h às 18h</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+
+    <footer>
+	<h1><img src="logo.jpg" class="logo-cabecalho"></h1>
+	<p class="copyright">Rua Dona Otília Nº 3985 - Nonoai - Porto Alegre/RS</p>
+	<p class="copyright"><img src="whatsapp.png" style="padding-left:5px;"> WhatsApp (51) 98042-5251</p>
+        <p class="copyright">&copy; Copyright Antônio's Barbershop - 2022</p>
+    </footer>
+
+</body>
+
+</html>
