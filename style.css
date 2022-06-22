@@ -126,9 +126,9 @@ form label, form legend {
 
 .input-padrao {
     display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 30%;
+    margin: 0 0 0px;
+    padding: 10px 60px;
+    width: 50%;
 }
 
 /* Campo de testes dos input*/
